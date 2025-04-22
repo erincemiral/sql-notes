@@ -2,7 +2,7 @@
 
 Bu belge, SQL öğrenme sürecinizde başvurabileceğiniz temel komutların açıklamaları ve örnekleriyle birlikte hazırlanmıştır.
 
-## 🧪 Örnek Tablo: Employees
+##  Örnek Tablo: Employees
 
 | employee_id | first_name | last_name | department | salary |
 |-------------|------------|-----------|------------|--------|
@@ -16,15 +16,15 @@ Bu belge, SQL öğrenme sürecinizde başvurabileceğiniz temel komutların aç�
 
 # CREATE DATABASE
 
-### 📌 Açıklama:
+###  Açıklama:
 Yeni bir veritabanı oluşturmak için kullanılır.
 
-### 🔧 Örnek Söz Dizimi:
+###  Örnek Söz Dizimi:
 ```sql
 CREATE DATABASE MyDatabase;
 ```
 
-### 🎯 Uygulama:
+###  Uygulama:
 ```sql
 -- Veritabanı oluşturma
 CREATE DATABASE CompanyDB;
@@ -34,15 +34,15 @@ CREATE DATABASE CompanyDB;
 
 # CREATE TABLE
 
-### 📌 Açıklama:
+###  Açıklama:
 Yeni bir tablo oluşturmak için kullanılır.
 
-### 🔧 Örnek Söz Dizimi:
+###  Örnek Söz Dizimi:
 ```sql
 CREATE TABLE table_name (column1 datatype, column2 datatype, ...);
 ```
 
-### 🎯 Uygulama:
+###  Uygulama:
 ```sql
 -- Employees tablosunu oluşturma
 CREATE TABLE Employees (
@@ -58,15 +58,15 @@ CREATE TABLE Employees (
 
 # ALTER TABLE
 
-### 📌 Açıklama:
+###  Açıklama:
 Var olan bir tabloyu değiştirmek için kullanılır.
 
-### 🔧 Örnek Söz Dizimi:
+###  Örnek Söz Dizimi:
 ```sql
 ALTER TABLE table_name ADD column_name datatype;
 ```
 
-### 🎯 Uygulama:
+###  Uygulama:
 ```sql
 -- Employees tablosuna email sütunu ekleme
 ALTER TABLE Employees ADD email VARCHAR(100);
@@ -76,15 +76,15 @@ ALTER TABLE Employees ADD email VARCHAR(100);
 
 # INSERT INTO
 
-### 📌 Açıklama:
+###  Açıklama:
 Bir tabloya yeni veri eklemek için kullanılır.
 
-### 🔧 Örnek Söz Dizimi:
+###  Örnek Söz Dizimi:
 ```sql
 INSERT INTO table_name (column1, column2, ...) VALUES (value1, value2, ...);
 ```
 
-### 🎯 Uygulama:
+###  Uygulama:
 ```sql
 -- Yeni bir çalışan ekleme
 INSERT INTO Employees (employee_id, first_name, last_name, department, salary)
@@ -95,15 +95,15 @@ VALUES (6, 'Emily', 'Clark', 'Finance', 5100);
 
 # UPDATE
 
-### 📌 Açıklama:
+###  Açıklama:
 Var olan bir veriyi güncellemek için kullanılır.
 
-### 🔧 Örnek Söz Dizimi:
+###  Örnek Söz Dizimi:
 ```sql
 UPDATE table_name SET column1 = value1 WHERE condition;
 ```
 
-### 🎯 Uygulama:
+###  Uygulama:
 ```sql
 -- Maaşı güncelleme
 UPDATE Employees SET salary = 5500 WHERE employee_id = 1;
@@ -113,15 +113,15 @@ UPDATE Employees SET salary = 5500 WHERE employee_id = 1;
 
 # DELETE
 
-### 📌 Açıklama:
+###  Açıklama:
 Veri silmek için kullanılır.
 
-### 🔧 Örnek Söz Dizimi:
+###  Örnek Söz Dizimi:
 ```sql
 DELETE FROM table_name WHERE condition;
 ```
 
-### 🎯 Uygulama:
+###  Uygulama:
 ```sql
 -- IT departmanındaki çalışanları silme
 DELETE FROM Employees WHERE department = 'IT';
@@ -131,15 +131,15 @@ DELETE FROM Employees WHERE department = 'IT';
 
 # DROP TABLE
 
-### 📌 Açıklama:
+###  Açıklama:
 Bir tabloyu tamamen silmek için kullanılır.
 
-### 🔧 Örnek Söz Dizimi:
+###  Örnek Söz Dizimi:
 ```sql
 DROP TABLE table_name;
 ```
 
-### 🎯 Uygulama:
+###  Uygulama:
 ```sql
 -- Employees tablosunu silme
 DROP TABLE Employees;
@@ -149,15 +149,15 @@ DROP TABLE Employees;
 
 # SELECT
 
-### 📌 Açıklama:
+###  Açıklama:
 Veritabanından veri çekmek için kullanılır.
 
-### 🔧 Örnek Söz Dizimi:
+###  Örnek Söz Dizimi:
 ```sql
 SELECT column1, column2 FROM table_name;
 ```
 
-### 🎯 Uygulama:
+###  Uygulama:
 ```sql
 -- Tüm çalışanların adlarını getirme
 SELECT first_name, last_name FROM Employees;
@@ -167,15 +167,15 @@ SELECT first_name, last_name FROM Employees;
 
 # FROM
 
-### 📌 Açıklama:
+###  Açıklama:
 Verinin hangi tablodan geleceğini belirtmek için kullanılır.
 
-### 🔧 Örnek Söz Dizimi:
+###  Örnek Söz Dizimi:
 ```sql
 SELECT * FROM table_name;
 ```
 
-### 🎯 Uygulama:
+###  Uygulama:
 ```sql
 -- Employees tablosundan tüm verileri çekme
 SELECT * FROM Employees;
@@ -185,15 +185,15 @@ SELECT * FROM Employees;
 
 # WHERE
 
-### 📌 Açıklama:
+###  Açıklama:
 Şartlı sorgularda kullanılır.
 
-### 🔧 Örnek Söz Dizimi:
+###  Örnek Söz Dizimi:
 ```sql
 SELECT * FROM table_name WHERE condition;
 ```
 
-### 🎯 Uygulama:
+###  Uygulama:
 ```sql
 -- IT departmanındaki çalışanları getirme
 SELECT * FROM Employees WHERE department = 'IT';
